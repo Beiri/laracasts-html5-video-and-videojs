@@ -26,6 +26,7 @@
 
     {{-- <script src="https://vjs.zencdn.net/5.10.2/video.min.js"></script> --}}
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
