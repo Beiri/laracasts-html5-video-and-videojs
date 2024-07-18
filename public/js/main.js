@@ -9,13 +9,16 @@ var video = videojs("my-video", {
     },
 });
 
-// video.on("pause", function () {
-//     alert("You have " + this.remainingTime() + " seconds left to watch.");
-// });
+$.ajaxSetup({
+    headers: {
+        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+    },
+});
 
-// video.ready(function () {
-//     this.hotkeys({
-//         seekStep: 10,
-//         enableNumbers: false,
-//     });
-// });
+video.on("ended", function () {
+    $.ajax({
+        type: "POST",
+        url: "completions",
+        data: { videoId: 1 },
+    });
+});

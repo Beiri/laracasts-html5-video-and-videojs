@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- <link href="https://vjs.zencdn.net/5.10.2/video-js.css" rel="stylesheet" /> --}}
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
@@ -23,6 +24,7 @@
         </p>
     </video>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     {{-- <script src="https://vjs.zencdn.net/5.10.2/video.min.js"></script> --}}
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
     <script src="//cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
