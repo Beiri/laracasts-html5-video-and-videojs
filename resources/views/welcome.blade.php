@@ -13,8 +13,7 @@
 
 <body>
     <h1>Test</h1>
-    <video id="my-video" class="video-js vjs-big-play-centered" controls poster="http://vjs.zencdn.net/v/oceans.png"
-        data-setup="{}">
+    <video id="my-video" class="video-js vjs-big-play-centered" controls poster="http://vjs.zencdn.net/v/oceans.png">
         <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
 
         <p class="vjs-no-js">
@@ -26,6 +25,7 @@
 
     {{-- <script src="https://vjs.zencdn.net/5.10.2/video.min.js"></script> --}}
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="//cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 
